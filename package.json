@@ -1,0 +1,25 @@
+{
+  "name": "gate",
+  "module": "index.ts",
+  "type": "module",
+  "bin": {
+    "gate": "index.ts"
+  },
+  "workspaces": [
+    "packages/server",
+    "packages/providers"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/yargs": "^17.0.33"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "yargs": "^17.7.2",
+    "gate-server": "1.0.0",
+    "gate-providers": "1.0.0"
+  }
+}
